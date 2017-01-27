@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            fontPath="fonts/jflat-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/flag1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_moon"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/toolbar"/>
+    <ImageView
+        android:id="@+id/flag2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_moon"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Main"
+        android:layout_toLeftOf="@id/flag2"
+        android:layout_toRightOf="@id/flag1"
+        android:textColor="#FF4081"
+        android:textSize="20sp" />
+
+
+    <ScrollView
+        android:id="@+id/layout_Country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loading"
+        android:layout_below="@+id/txtTitle">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcRamadam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            fontPath="fonts/jflat-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/powerby"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

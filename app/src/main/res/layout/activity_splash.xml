@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+
+    <!-- <com.hanks.htextview.HTextView
+         android:id="@+id/text"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         />-->
+
+  <!--  <TextView
+        android:id="@+id/title_mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="ဆွီယာမ်"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    >-->
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="100dp">
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/jflat-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rotateloading"
+            android:gravity="center"
+            android:text="@string/sawn"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:loading_color="#ffffff"
+            android:layout_centerInParent="true"
+            app:loading_width="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

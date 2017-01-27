@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="-5dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <!--<ImageView
+                android:id="@+id/imgFlag"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:src="@drawable/mm" />-->
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_circle"
+                android:text="Day"
+                android:textSize="16sp"
+                android:textColor="@android:color/background_light"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+              <!--  <TextView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:text="Day"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:text="Sehri"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:text=":"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/sehri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:text="Surhi"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="Iftari"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:text=":"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/iftari"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Iftari"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="Iftari"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:typeface="serif" />-->
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Iftari"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
